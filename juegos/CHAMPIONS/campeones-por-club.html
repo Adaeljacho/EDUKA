@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#231f1f" />
+    <meta name="description" content="Identifica todas las finales europeas que ganó el club indicado." />
+    <title>Años ganados por club — EDUKA</title>
+    <link rel="icon" type="image/png" href="../../IMAGENES/isotipo-eduka-1000.png" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="champions.css" />
+    <script src="campeones-datos.js" defer></script>
+    <script src="champions-common.js" defer></script>
+    <script src="campeones-por-club.js" defer></script>
+  </head>
+  <body class="champions-theme">
+    <a class="skip-link" href="#club-main">Saltar al juego</a>
+    <div class="page-shell champions-shell">
+      <header class="topbar"><a class="brand-small" href="../../index.html" aria-label="EDUKA, inicio"><img src="../../IMAGENES/isotipo-eduka-1000.png" alt="" /><span>EDUKA</span></a><div class="champions-logo-placeholder" aria-label="Espacio reservado para el logo de Champions League">ESPACIO PARA LOGO</div><a class="topbar-link" href="champions.html">← <span>Modalidades</span></a></header>
+      <main id="club-main" class="champions-page-main">
+        <a class="champions-back-link" href="champions.html">← Todas las modalidades</a>
+        <section class="champions-page-intro"><p class="champions-kicker">MODALIDAD 03 · EXPERTO</p><h1>Años ganados <span>por club</span></h1><p>Marca todas las ediciones en las que el equipo indicado levantó la copa.</p></section>
+        <section id="club-start-panel" class="champions-panel">
+          <div class="champions-toolbar"><div><h2>Reto experto</h2><p>Una ronda completa con todos los clubes campeones.</p></div></div>
+          <p class="champions-status">Se te mostrará un club a la vez. Para cada uno, selecciona todos sus años de victoria entre 1956 y 2026.</p>
+          <div class="champion-score"><span id="club-count-summary"></span><span id="club-edition-summary"></span></div>
+          <button class="champions-control primary" id="club-start" type="button">Empezar reto →</button>
+        </section>
+        <section id="club-round" class="champions-panel champions-hidden" aria-labelledby="club-round-title">
+          <div class="champions-toolbar"><div><p class="champions-kicker" id="club-progress-label"></p><h2 id="club-round-title">Marca los años ganados</h2></div><button class="champions-control" id="club-exit" type="button">Salir del reto</button></div>
+          <article class="champion-club-prompt"><div id="club-crest" class="crest-wrap"></div><div><h2 id="club-name"></h2><p>Selecciona todos sus años campeones.</p></div></article>
+          <div id="club-decade-groups" class="champions-decades"></div>
+          <p id="club-feedback" class="champions-status" role="status" aria-live="polite">Aún no has enviado tus selecciones.</p>
+          <div class="results-actions"><button class="champions-control primary" id="club-check" type="button">Verificar selecciones</button><button class="champions-control champions-hidden" id="club-next" type="button">Siguiente club →</button></div>
+        </section>
+        <section id="club-results" class="champions-panel champions-hidden" aria-labelledby="club-results-title">
+          <div class="champions-toolbar"><div><h2 id="club-results-title" tabindex="-1">Resumen del reto</h2></div></div>
+          <div class="champion-score" id="club-total-score"></div>
+          <div class="table-scroll"><table class="champion-results"><thead><tr><th>Club</th><th>Años correctos</th><th>Omitidos</th><th>Selecciones incorrectas</th></tr></thead><tbody id="club-results-body"></tbody></table></div>
+          <div class="results-actions"><button class="champions-control primary" id="club-replay" type="button">Jugar otra vez ↻</button><a class="champions-control" href="champions.html">Volver a modalidades</a></div>
+        </section>
+      </main>
+      <footer class="site-footer"><span class="footer-brand">EDUKA</span><span>Una colección personal de juegos de memoria.</span></footer>
+    </div>
+  </body>
+</html>
+

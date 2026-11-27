@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#231f1f" />
+    <meta
+      name="description"
+      content="Memoriza los campeones de Europa con tres modos de juego."
+    />
+    <title>Campeones de Europa — EDUKA</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../IMAGENES/isotipo-eduka-1000.png"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="champions.css" />
+    <script src="campeones-datos.js" defer></script>
+    <script src="champions.js" defer></script>
+  </head>
+  <body class="champions-theme">
+    <a class="skip-link" href="#champions-main">Saltar al contenido</a>
+    <div class="page-shell champions-shell">
+      <header class="topbar">
+        <a
+          class="brand-small"
+          href="../../index.html"
+          aria-label="EDUKA, inicio"
+          ><img src="../../IMAGENES/isotipo-eduka-1000.png" alt="" /><span
+            >EDUKA</span
+          ></a
+        >
+        <img
+          class="champions-logo-placeholder"
+          aria-label="Espacio reservado para el logo de Champions League"
+          src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/23964c09-b3aa-4ff0-ae61-fa9dad4f2cd2/trim?format=webp&width=2560"
+        >
+      </img>
+        <a class="topbar-link" href="../../index.html#coleccion"
+          >← <span>Volver a juegos</span></a
+        >
+      </header>
+      <main id="champions-main" class="champions-main">
+        <section class="champions-hero" aria-labelledby="champions-title">
+          <h1 id="champions-title">Campeones de <span>Europa</span></h1>
+          <p>
+            Recorre los clubes que levantaron la copa, desde 1956 hasta la final
+            más reciente.
+          </p>
+          <div class="champions-counts">
+            <span id="edition-count">71 ediciones</span
+            ><i aria-hidden="true"></i
+            ><span id="club-count">24 clubes campeones</span>
+          </div>
+        </section>
+        <section class="champions-menu" aria-label="Modalidades de juego">
+          <a class="champions-mode-card" href="campeones-decadas.html">
+            <span class="mode-card-number">01</span
+            ><span class="mode-card-icon" aria-hidden="true">▦</span>
+            <h2>Campeones por décadas</h2>
+            <p>Completa la cuadrícula y descubre quién ganó cada final.</p>
+            <span class="mode-card-action"
+              >Jugar <b aria-hidden="true">→</b></span
+            >
+          </a>
+          <a class="champions-mode-card" href="campeones-aleatorio.html">
+            <span class="mode-card-number">02</span
+            ><span class="mode-card-icon" aria-hidden="true">◷</span>
+            <h2>Año aleatorio</h2>
+            <p>Recuerda qué club se coronó campeón en cada año.</p>
+            <span class="mode-card-action"
+              >Jugar <b aria-hidden="true">→</b></span
+            >
+          </a>
+          <a class="champions-mode-card" href="campeones-por-club.html">
+            <span class="mode-card-number">03</span
+            ><span class="mode-card-icon" aria-hidden="true">♜</span>
+            <h2>Años ganados por un club</h2>
+            <p>Marca todas las finales que ganó el equipo indicado.</p>
+            <span class="mode-card-action"
+              >Modo experto <b aria-hidden="true">→</b></span
+            >
+          </a>
+        </section>
+        <p class="champions-source-note">
+          Datos contrastados con el cuadro de honor y los resultados oficiales
+          de
+          <a
+            href="https://www.uefa.com/uefachampionsleague/news/0275-1541637ad1db-88aeeefefefd-1000--all-time-european-cup-honours-board/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >UEFA</a
+          >.
+        </p>
+      </main>
+      <footer class="site-footer">
+        <span class="footer-brand">EDUKA</span
+        ><span>Una colección personal de juegos de memoria.</span>
+      </footer>
+    </div>
+  </body>
+</html>
